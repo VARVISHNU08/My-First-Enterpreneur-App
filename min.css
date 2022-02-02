@@ -1,0 +1,7 @@
+#questn1, #questn2, #questn3, #checkbox, #sbmtBttn{
+    display: none;
+}
+
+body{
+    background-image: url("bg.png");
+}

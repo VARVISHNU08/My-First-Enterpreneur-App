@@ -1,0 +1,19 @@
+body{
+    background-image: url("bg.png");
+}
+
+#prflMg{
+    text-align: center;
+    height: 75px;
+    margin-top: 10px;
+    border-radius: 70px;
+}
+
+#lgnDv{
+    margin-top: 150px;
+    border-radius: 70px;
+    border-style: ridge;
+    border-color: grey;
+    width: 325px;
+    height: 400px;
+}

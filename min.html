@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> E-Interviewer </title>
+        <link rel="icon" type="image/x-icon" href="in.png">
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="min.css">
+<script src="min.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h1 id="mnHd"> Welcome to your E-interview editor</h1>
+            <br><br>
+            <label id="cdLbl">Respected User please create a secret 6 digit code that can be shared with the interviewee</label>
+            <br>
+            <input type="number" id="mnFldrNpt" placeholder="6 digit code">
+            <br>
+            <button id="crtBtn" onclick="create();">Create</button>
+            <br><br>
+            <div id="checkbox">
+                <input id="1" type="checkbox" onclick="decide();">10 Questions
+                <br>
+                <input id="2" type="checkbox" onclick="decid1();">15 Questions
+                <br>
+                <input id="3" type="checkbox" onclick="decid2();">20 Questions
+                <br><br><br>
+            </div>
+            <div id="questn1">
+                <input type="text" id="question1" placeholder="Question 1">
+                <span>
+                    <input type="text" id="answer1" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question2" placeholder="Question 2">
+                <span>
+                    <input type="text" id="answer2" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question3" placeholder="Question 3">
+                <span>
+                    <input type="text" id="answer3" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question4" placeholder="Question 4">
+                <span>
+                    <input type="text" id="answer4" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question5" placeholder="Question 5">
+                <span>
+                    <input type="text" id="answer5" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question6" placeholder="Question 6">
+                <span>
+                    <input type="text" id="answer6" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question7" placeholder="Question 7">
+                <span>
+                    <input type="text" id="answer7" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question8" placeholder="Question 8">
+                <span>
+                    <input type="text" id="answer8" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question9" placeholder="Question 9">
+                <span>
+                    <input type="text" id="answer9" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question10" placeholder="Question 10">
+                <span>
+                    <input type="text" id="answer10" placeholder="Expected Answer">
+                </span>
+                <br>
+            </div>
+            <br><br>
+            <div id="questn2">
+                <input type="text" id="question11" placeholder="Question 11">
+                <span>
+                    <input type="text" id="answer11" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question12" placeholder="Question 12">
+                <span>
+                    <input type="text" id="answer12" placeholder="Expected Answer">
+                </span>
+                
+                <br><br>
+                <input type="text" id="question13" placeholder="Question 13">
+                <span>
+                    <input type="text" id="answer13" placeholder="Expected Answer">
+                </span>
+                
+                <br><br>
+                <input type="text" id="question14" placeholder="Question 14">
+                <span>
+                    <input type="text" id="answer14" placeholder="Expected Answer">
+                </span>
+                
+                <br><br>
+                <input type="text" id="question15" placeholder="Question 15">
+                <span>
+                    <input type="text" id="answer15" placeholder="Expected Answer">
+                </span>
+                <br>
+                
+            </div>
+            <br><br>
+            <div id="questn3">
+                <input type="text" id="question16" placeholder="Question 16">
+                <span>
+                    <input type="text" id="answer16" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question17" placeholder="Question 17">
+                <span>
+                    <input type="text" id="answer17" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question18" placeholder="Question 18">
+                <span>
+                    <input type="text" id="answer18" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question19" placeholder="Question 19">
+                <span>
+                    <input type="text" id="answer19" placeholder="Expected Answer">
+                </span>
+                <br><br>
+                <input type="text" id="question20" placeholder="Question 20">
+                <span>
+                    <input type="text" id="answer20" placeholder="Expected Answer">
+                </span>
+                <br>
+            </div>
+            <br><br>
+            <button id="sbmtBttn" onclick="submeet();" class="btn btn-success">Submit</button>
+            
+        </center>
+    </body>
+</html>
